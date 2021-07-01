@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E91E63">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:id="@+id/videoViewFS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--Menu video play-->
+        <RelativeLayout
+            android:id="@+id/blackGroundPlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="#373434"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/btPlay"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageView
+                android:id="@+id/btPause"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/ic_pause_black_24dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/btSkipPre"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btPlay"
+                android:src="@drawable/ic_fast_rewind_black_24dp" />
+
+            <ImageView
+                android:id="@+id/btSkipNext"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btPlay"
+                android:src="@drawable/ic_fast_forward_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvTimeStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/seerbarplay"
+                android:text="00:00"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvTimeEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/seerbarplay"
+                android:layout_alignParentRight="true"
+                android:text="00:00"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:id="@+id/seerbarplay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <SeekBar
+                    android:id="@+id/sbPlay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.75" />
+
+                <ImageView
+                    android:id="@+id/btFullSc"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/ic_fullscreen_black_24dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--End Menu video play-->
+
+    </RelativeLayout>
+    </LinearLayout>
+</layout>

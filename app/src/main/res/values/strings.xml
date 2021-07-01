@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">VideoPlayer</string>
+    <string name="main_tv_nonetwork">Không có mạng. Hãy Thử Lại</string>
+    <string name="main_bt_tryConnect">Kết nối lại</string>
+    <string name="text_home">Trang Chủ</string>
+    <string name="text_hot">Hot</string>
+    <string name="text_history">TV Series</string>
+    <string name="text_user">Cá nhân</string>
+    <string name="text_category">Hành động</string>
+    <string name="text_news">Bàn luận</string>
+    <string name="text_onGoing">Phim sắp ra mắt</string>
+    <string name="text_search">Nhập tìm kiếm của bạn tại đây</string>
+    <string name="text_type_love">Yêu em là điều tuyệt vời nhất</string>
+    <string name="text_brightness">Độ sáng: </string>
+    <string name="text_volume">Âm lượng: </string>
+
+</resources>

@@ -1,0 +1,2 @@
+rootProject.name='A39_Project_VideoPlayer'
+include ':app'
